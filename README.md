@@ -434,9 +434,7 @@ git push -u origin master
 
 ```
 git checkout --orphan gh-pages
-git rm 
--f
- --cached -r .
+git rm -f --cached -r .
 git clean -df
 rm -rf *~
 ```
