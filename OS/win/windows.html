@@ -1,0 +1,400 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>windows_通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档_字条网</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="通过将 Wiki 文档内容的仓库托管在 GitHub 之上，并且将 GitBook 框架的代码放在仓库中 ，然后找一台有 Node.js 环境的服务器，通过简单的几行命令就能部署成功，十分钟内能搞定。从而具备多人协作、版本控制、Markdown 写作、代码高亮、实时更新的特性。">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    <meta name="keywords" content="wiki,文档部署">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="http://cdn.zitiao.org/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../../assets/website/page_custom.min.css">
+    <script type="text/javascript" src="http://cdn.zitiao.org/www-tongji.js"></script>
+    
+    <link rel="next" href="../unix/unix.html" />
+    
+    
+    <link rel="prev" href="../linux/linux.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            <!-- search_input -->
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="输入并搜索" />
+            </div>
+            <!-- search_input -->
+
+            
+            <a href="../.." class="logo">
+                <!-- <img src="../../images/logo.png"> -->
+                <img src="http://cdn.zitiao.org/logo.png"/>
+            </a>
+            
+            <a href="../.." class="logo">
+                <h1>通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档</h1>
+            </a>
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">Part I</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            Introduction
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../LIVE/me.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            个人简历
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../BLOG/ABOUT_BLOG.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            关于博客
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">Part II</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../knowledge.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            知识库
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="../os.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            操作系统
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="../mac/mac.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            Mac
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../linux/linux.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            Linux
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="windows.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            windows
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../unix/unix.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            Unix
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        <!-- search_result -->
+                        <div id="book-search-results">
+                            <div class="search-noresults">
+                                
+                                <!-- page -->
+                                
+                                <div class="gb-markdown book-page-inner page-inner">
+                                    <h1 id="windows">windows</h1>
+
+                                </div>
+                                
+                                <!-- page -->
+
+                            </div>
+                            <div class="search-results">
+                                <div class="has-results">
+                                    
+                                    <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                                    <ul class="search-results-list"></ul>
+                                    
+                                </div>
+                                <div class="no-results">
+                                    
+                                    <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- search_result -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container footer-container">
+            <div class="copyright">
+                © 2017 <a href="http://zitiao.org">字条网 zitiao.org</a> | 京ICP备16051867号-2
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+    
+
+
+<script>
+    var gitbook = gitbook || [];
+    gitbook.push(function() {
+        gitbook.page.hasChanged({"page":{"title":"windows","level":"4.1.1.3","depth":3,"next":{"title":"Unix","level":"4.1.1.4","depth":3,"path":"OS/unix/unix.md","ref":"OS/unix/unix.md","articles":[]},"previous":{"title":"Linux","level":"4.1.1.2","depth":3,"path":"OS/linux/linux.md","ref":"OS/linux/linux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","theme-official","sitemap-general"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap-general":{"prefix":"http://zitiao.org/deploy/"},"search-pro":{},"highlight":{},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","head_keywords":"wiki,文档部署","logo":"./images/logo.png","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档","language":"zh-hans","head_title":"_通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档_字条网","gitbook":">= 3.0.0","head_description":"通过将 Wiki 文档内容的仓库托管在 GitHub 之上，并且将 GitBook 框架的代码放在仓库中 ，然后找一台有 Node.js 环境的服务器，通过简单的几行命令就能部署成功，十分钟内能搞定。从而具备多人协作、版本控制、Markdown 写作、代码高亮、实时更新的特性。"},"file":{"path":"OS/win/windows.md","mtime":"2019-05-06T05:14:39.156Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-06T05:23:12.187Z"},"basePath":"../..","book":{"language":""}});
+    });
+</script>
+<script>
+    $('.book-page-inner h1,.book-page-inner h2,.book-page-inner h3,.book-page-inner h4,.book-page-inner h5,.book-page-inner h6').click(function(){
+        var id = $(this).attr('id');
+        if(id) {
+            window.location.hash=id;
+        }
+    });
+</script>
+
+        
+    </body>
+</html>
+

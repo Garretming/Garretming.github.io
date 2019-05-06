@@ -1,0 +1,428 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>参考_通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档_字条网</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="通过将 Wiki 文档内容的仓库托管在 GitHub 之上，并且将 GitBook 框架的代码放在仓库中 ，然后找一台有 Node.js 环境的服务器，通过简单的几行命令就能部署成功，十分钟内能搞定。从而具备多人协作、版本控制、Markdown 写作、代码高亮、实时更新的特性。">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    <meta name="keywords" content="wiki,文档部署">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="http://cdn.zitiao.org/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../assets/website/page_custom.min.css">
+    <script type="text/javascript" src="http://cdn.zitiao.org/www-tongji.js"></script>
+    
+    <link rel="next" href="../OS/knowledge.html" />
+    
+    
+    <link rel="prev" href="advanced.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            <!-- search_input -->
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="输入并搜索" />
+            </div>
+            <!-- search_input -->
+
+            
+            <a href=".." class="logo">
+                <!-- <img src="../images/logo.png"> -->
+                <img src="http://cdn.zitiao.org/logo.png"/>
+            </a>
+            
+            <a href=".." class="logo">
+                <h1>通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档</h1>
+            </a>
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">Part I</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../" class="list-group-item ">
+        
+
+            
+
+            
+
+            Introduction
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../LIVE/me.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            个人简历
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="ABOUT_BLOG.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            关于博客
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="create.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            项目搭建
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="run.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            运行部署
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="update.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            更新文档
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="advanced.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            进阶功能
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="test.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            参考
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">Part II</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../OS/knowledge.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            知识库
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        <!-- search_result -->
+                        <div id="book-search-results">
+                            <div class="search-noresults">
+                                
+                                <!-- page -->
+                                
+                                <div class="gb-markdown book-page-inner page-inner">
+                                    <h1 id="&#x9879;&#x76EE;&#x4ECB;&#x7ECD;">&#x9879;&#x76EE;&#x4ECB;&#x7ECD;</h1>
+<p><a href="https://www.jianshu.com/p/f81a2509ca89" target="_blank">https://www.jianshu.com/p/f81a2509ca89</a></p>
+<p><strong>&#x601D;&#x8DEF;&#xFF1A;&#x901A;&#x8FC7;&#x5C06; Wiki &#x6587;&#x6863;&#x5185;&#x5BB9;&#x7684;&#x4ED3;&#x5E93;&#x6258;&#x7BA1;&#x5728; GitHub &#x4E4B;&#x4E0A;&#xFF0C;&#x5E76;&#x4E14;&#x5C06; GitBook &#x6846;&#x67B6;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5728;&#x4ED3;&#x5E93;&#x4E2D; &#xFF0C;&#x7136;&#x540E;&#x627E;&#x4E00;&#x53F0;&#x6709; Node.js &#x73AF;&#x5883;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x51E0;&#x884C;&#x547D;&#x4EE4;&#x5C31;&#x80FD;&#x90E8;&#x7F72;&#x6210;&#x529F;&#xFF0C;&#x5341;&#x5206;&#x949F;&#x5185;&#x80FD;&#x641E;&#x5B9A;&#x3002;&#x4ECE;&#x800C;&#x5177;&#x5907;&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x3001;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3001;Markdown &#x5199;&#x4F5C;&#x3001;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#x3001;&#x5B9E;&#x65F6;&#x66F4;&#x65B0;&#x7684;&#x7279;&#x6027;&#x3002;</strong></p>
+<h2 id="&#x4E00;&#x3001;&#x6548;&#x679C;&#x5C55;&#x793A;">&#x4E00;&#x3001;&#x6548;&#x679C;&#x5C55;&#x793A;</h2>
+<h3 id="1&#x3001;material-design-&#x4E2D;&#x6587;&#x7248;&#xFF08;&#x6709;&#x4FA7;&#x8FB9;&#x680F;&#x83DC;&#x5355;&#xFF09;">1&#x3001;Material Design &#x4E2D;&#x6587;&#x7248;&#xFF08;&#x6709;&#x4FA7;&#x8FB9;&#x680F;&#x83DC;&#x5355;&#xFF09;</h3>
+<ul>
+<li>&#x9875;&#x9762;&#x6548;&#x679C;&#xFF1A;<a href="http://zitiao.org/material-design/" target="_blank">http://zitiao.org/material-design/</a></li>
+<li>&#x6587;&#x6863;&#x4ED3;&#x5E93;&#xFF1A;<a href="https://github.com/zitiaocn/material-design" target="_blank">https://github.com/zitiaocn/material-design</a></li>
+</ul>
+<p><img src="http://om0iml27u.bkt.clouddn.com/2017/02/ti8wn.jpg" alt=""></p>
+<h3 id="2&#x3001;gitbook-help-center&#xFF08;&#x65E0;&#x4FA7;&#x8FB9;&#x680F;&#x83DC;&#x5355;&#xFF09;">2&#x3001;GitBook Help Center&#xFF08;&#x65E0;&#x4FA7;&#x8FB9;&#x680F;&#x83DC;&#x5355;&#xFF09;</h3>
+<ul>
+<li>&#x9875;&#x9762;&#x6548;&#x679C;&#xFF1A;<a href="https://help.gitbook.com/" target="_blank">https://help.gitbook.com/</a></li>
+<li>&#x6587;&#x6863;&#x4ED3;&#x5E93;&#xFF1A;<a href="https://github.com/GitbookIO/help.gitbook.com" target="_blank">https://github.com/GitbookIO/help.gitbook.com</a></li>
+</ul>
+<p><img src="http://cdn.zitiao.org/deploy/s5daq.jpg" alt="">     </p>
+<p><img src="http://cdn.zitiao.org/deploy/s011v.jpg" alt=""></p>
+<h2 id="&#x4E8C;&#x3001;&#x529F;&#x80FD;&#x7279;&#x6027;">&#x4E8C;&#x3001;&#x529F;&#x80FD;&#x7279;&#x6027;</h2>
+<h3 id="1&#x3001;&#x9875;&#x9762;&#x7F8E;&#x89C2;">1&#x3001;&#x9875;&#x9762;&#x7F8E;&#x89C2;</h3>
+<p>&#x4E3B;&#x8981;&#x4F53;&#x73B0;&#x5728;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#xFF1A;&#x5176;&#x4E00;&#xFF0C;&#x9875;&#x9762;&#x7684;&#x5916;&#x89C2;&#xFF0C;&#x8BF7;&#x56DE;&#x5934;&#x770B;&#x770B;&#x4E0A;&#x9762;&#x7684;&#x6548;&#x679C;&#x56FE;&#x3002;&#x5176;&#x4E8C;&#xFF0C;&#x94FE;&#x63A5;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;   </p>
+<ul>
+<li>GitBook &#x94FE;&#x63A5;&#x793A;&#x4F8B;&#xFF1A;<a href="http://zitiao.org/material-design/usability/accessibility.html" target="_blank">http://zitiao.org/material-design/usability/accessibility.html</a></li>
+<li>MDwiki &#x94FE;&#x63A5;&#x793A;&#x4F8B;&#xFF1A;<a href="http://dynalon.github.io/mdwiki/#!layout.md" target="_blank">http://dynalon.github.io/mdwiki/#!layout.md</a> &#xFF08;&#x6211;&#x4E2A;&#x4EBA;&#x89C1;&#x4E0D;&#x5F97; <code>#</code>&#x3001;<code>!</code> &#x4E4B;&#x7C7B;&#x7684;&#x5B57;&#x7B26;&#xFF09;</li>
+</ul>
+<h3 id="2&#x3001;&#x591A;&#x4EBA;&#x534F;&#x4F5C;--&#x7248;&#x672C;&#x63A7;&#x5236;">2&#x3001;&#x591A;&#x4EBA;&#x534F;&#x4F5C; &amp; &#x7248;&#x672C;&#x63A7;&#x5236;</h3>
+<p>&#x6587;&#x6863;&#x5185;&#x5BB9;&#x6258;&#x7BA1;&#x4E8E; GitHub &#x4E4B;&#x4E0A;&#xFF0C;GitHub &#x672C;&#x8EAB;&#x5C31;&#x5177;&#x5907; <code>&#x591A;&#x4EBA;&#x534F;&#x4F5C;</code> &#x548C; <code>&#x7248;&#x672C;&#x63A7;&#x5236;</code> &#x7684;&#x529F;&#x80FD;&#x3002;&#x5F53;&#x7136;&#x6240;&#x6709;&#x7684; Git &#x6258;&#x7BA1;&#x5E73;&#x53F0;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x56FD;&#x5916;&#x7684; GitLab&#x3001;Bitbucket&#xFF0C;&#x6216;&#x8005;&#x56FD;&#x5185;&#x7684; git.oschina.net&#x3001;coding.net &#x90FD;&#x884C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x4ED3;&#x5E93;&#x79C1;&#x6709;&#xFF0C;&#x56FD;&#x5916;&#x4EA7;&#x54C1;&#x63A8;&#x8350; Bitbucket&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x514D;&#x8D39;&#xFF0C;&#x800C; GitHub &#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x6536;&#x8D39;&#x3002;&#x56FD;&#x5185;&#x7684;&#x597D;&#x50CF;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x90FD;&#x514D;&#x8D39;&#xFF0C;&#x5728;&#x5B89;&#x5168;&#x6027;&#x548C;&#x7A33;&#x5B9A;&#x6027;&#x65B9;&#x9762;&#x53EF;&#x80FD;&#x4E0D;&#x5982; Bitbucket&#x3002;</p>
+<h3 id="3&#x3001;markdown-&#x5199;&#x4F5C;">3&#x3001;Markdown &#x5199;&#x4F5C;</h3>
+<p>&#x6587;&#x6863;&#x5185;&#x5BB9;&#x6258;&#x7BA1;&#x4E8E; GitHub &#x4E4B;&#x4E0A;&#xFF0C;GitHub &#x672C;&#x8EAB;&#x5C31;&#x5177;&#x5907; <code>Markdown &#x5199;&#x4F5C;</code> &#x7684;&#x529F;&#x80FD;&#x3002;  </p>
+<h3 id="4&#x3001;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;">4&#x3001;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;</h3>
+<p>&#x901A;&#x8FC7; GitBook &#x7684;&#x63D2;&#x4EF6;&#x80FD;&#x5F88;&#x5BB9;&#x6613;&#x652F;&#x6301;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#xFF08;&#x8FD9;&#x5C31;&#x662F;&#x7AD9;&#x5728;&#x5DE8;&#x4EBA;&#x7684;&#x80A9;&#x8180;&#x4E0A;&#x7684;&#x597D;&#x5904;&#xFF09;&#x3002;</p>
+<h3 id="5&#x3001;&#x5B9E;&#x65F6;&#x66F4;&#x65B0;">5&#x3001;&#x5B9E;&#x65F6;&#x66F4;&#x65B0;</h3>
+<p>&#x901A;&#x8FC7;&#x7ED9; GitHub &#x4ED3;&#x5E93;&#x914D;&#x7F6E; <code>webhook</code> &#x8FDB;&#x884C; push &#x65F6;&#x7684;&#x6D88;&#x606F;&#x63A8;&#x9001;&#xFF0C;&#x80FD;&#x89E6;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x5B9E;&#x65F6;&#x66F4;&#x65B0;&#xFF08;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x9700;&#x8981;&#x4E9B;&#x4EE3;&#x7801;&#xFF09;&#x3002;</p>
+<h3 id="6&#x3001;&#x4E00;&#x952E;&#x90E8;&#x7F72;">6&#x3001;&#x4E00;&#x952E;&#x90E8;&#x7F72;</h3>
+<p>&#x53EA;&#x9700;&#x8981;&#x7B80;&#x5355;&#x7684;&#x51E0;&#x884C;&#x547D;&#x4EE4;&#x5C31;&#x90E8;&#x7F72;&#x5B8C;&#x6BD5;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;&#x6240;&#x9700;&#x8D44;&#x6E90;">&#x4E09;&#x3001;&#x6240;&#x9700;&#x8D44;&#x6E90;</h2>
+<p>&#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x5C31;&#x662F;&#xFF0C;&#x4E00;&#x53F0;&#x652F;&#x6301; Node.js &#x7684;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x516C;&#x7F51;&#x548C;&#x5185;&#x7F51;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x884C;&#xFF09;&#x3002;</p>
+<h2 id="&#x56DB;&#x3001;&#x4EA4;&#x6D41;&#x5B66;&#x4E60;">&#x56DB;&#x3001;&#x4EA4;&#x6D41;&#x5B66;&#x4E60;</h2>
+<p>&#x6B22;&#x8FCE;&#x52A0;&#x7FA4;&#x8BE6;&#x804A;</p>
+<p><img src="http://cdn.zitiao.org/deploy/weixinqun.jpeg" alt=""></p>
+<p>&#x5982;&#x679C;&#x626B;&#x7801;&#x52A0;&#x7FA4;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x8BF7;&#x6DFB;&#x52A0;&#x56DB;&#x52FE;&#x7684;&#x4E2A;&#x4EBA;&#x5FAE;&#x4FE1;&#xFF0C;&#x518D;&#x7531;&#x56DB;&#x52FE;&#x9080;&#x8BF7;&#x5165;&#x7FA4;&#xFF0C;&#x52A0;&#x597D;&#x53CB;&#x65F6;&#x8BF7;&#x586B;&#x5199;&#x9A8C;&#x8BC1;&#x4FE1;&#x606F;&#x300C;&#x5B57;&#x6761;&#x7F51;&#x52A0;&#x7FA4;&#x300D;</p>
+<p>&#x6DFB;&#x52A0; <code>&#x56DB;&#x52FE; 4J</code> &#x4E2A;&#x4EBA;&#x5FAE;&#x4FE1; <code>vincent4j</code>&#x3002;</p>
+<p>via <a href="http://4jplus.com" target="_blank">http://4jplus.com</a></p>
+
+                                </div>
+                                
+                                <!-- page -->
+
+                            </div>
+                            <div class="search-results">
+                                <div class="has-results">
+                                    
+                                    <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                                    <ul class="search-results-list"></ul>
+                                    
+                                </div>
+                                <div class="no-results">
+                                    
+                                    <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- search_result -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container footer-container">
+            <div class="copyright">
+                © 2017 <a href="http://zitiao.org">字条网 zitiao.org</a> | 京ICP备16051867号-2
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../gitbook/gitbook.js"></script>
+
+    
+    <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+    
+
+
+<script>
+    var gitbook = gitbook || [];
+    gitbook.push(function() {
+        gitbook.page.hasChanged({"page":{"title":"参考","level":"3.1.5","depth":2,"next":{"title":"知识库","level":"4.1","depth":1,"path":"OS/knowledge.md","ref":"OS/knowledge.md","articles":[{"title":"操作系统","level":"4.1.1","depth":2,"path":"OS/os.md","ref":"OS/os.md","articles":[{"title":"Mac","level":"4.1.1.1","depth":3,"path":"OS/mac/mac.md","ref":"OS/mac/mac.md","articles":[]},{"title":"Linux","level":"4.1.1.2","depth":3,"path":"OS/linux/linux.md","ref":"OS/linux/linux.md","articles":[]},{"title":"windows","level":"4.1.1.3","depth":3,"path":"OS/win/windows.md","ref":"OS/win/windows.md","articles":[]},{"title":"Unix","level":"4.1.1.4","depth":3,"path":"OS/unix/unix.md","ref":"OS/unix/unix.md","articles":[]}]}]},"previous":{"title":"进阶功能","level":"3.1.4","depth":2,"path":"BLOG/advanced.md","ref":"BLOG/advanced.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","theme-official","sitemap-general"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap-general":{"prefix":"http://zitiao.org/deploy/"},"search-pro":{},"highlight":{},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","head_keywords":"wiki,文档部署","logo":"./images/logo.png","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档","language":"zh-hans","head_title":"_通过 GitBook 开源框架和 GitHub 私有化部署 Wiki 文档_字条网","gitbook":">= 3.0.0","head_description":"通过将 Wiki 文档内容的仓库托管在 GitHub 之上，并且将 GitBook 框架的代码放在仓库中 ，然后找一台有 Node.js 环境的服务器，通过简单的几行命令就能部署成功，十分钟内能搞定。从而具备多人协作、版本控制、Markdown 写作、代码高亮、实时更新的特性。"},"file":{"path":"BLOG/test.md","mtime":"2019-05-06T05:14:38.547Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-06T05:23:12.187Z"},"basePath":"..","book":{"language":""}});
+    });
+</script>
+<script>
+    $('.book-page-inner h1,.book-page-inner h2,.book-page-inner h3,.book-page-inner h4,.book-page-inner h5,.book-page-inner h6').click(function(){
+        var id = $(this).attr('id');
+        if(id) {
+            window.location.hash=id;
+        }
+    });
+</script>
+
+        
+    </body>
+</html>
+
