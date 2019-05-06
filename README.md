@@ -12,7 +12,7 @@ GitHub Pages 简单说就是一个可以托管静态网站的 Git 项目，支�
 
 例如：这本书中使用的例子 ‘test’ 项目可以通过地址：_chengweiv5.github.io/test_来访问。
 
-当访问Garretming_.github.io/gitbook_时，会访问Garretming/_gitbook项目的\_gh-pages_分支的内容，所以需要为项目创建一个_gh-pages_分支，并且将静态站点内容放入其中。也就是说，_gitbook_ 项目将有如下两个分支：
+当访问Garretming.github.io/gitbook时，会访问Garretming/_gitbook项目的\_gh-pages_分支的内容，所以需要为项目创建一个_gh-pages_分支，并且将静态站点内容放入其中。也就是说，_gitbook_ 项目将有如下两个分支：
 
 * master, 保存书籍的源码
 * gh-pages, 保存书籍编译后的 HTML 文件
